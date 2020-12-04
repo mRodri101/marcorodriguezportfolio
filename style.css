@@ -35,14 +35,10 @@ h1 {
 
 .topnav a:hover {
     color: black;
-    text-decoration: underline;
-    color: black;
+    border-bottom: 1px solid black;
   }
   
-  /* Add a color to the active/current link */
 .topnav a.active {
     /*color: black;*/
-    border-bottom: 1px solid black
-    
-
+    border-bottom: 1px solid black;
   }
