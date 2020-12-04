@@ -1,0 +1,48 @@
+header{
+    display: inline-block;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.alignicons {
+    padding: 2vh;
+}
+.icons {
+    width: 4vw;
+    float: right;
+    margin: 1vw;
+}
+.topnav{
+    display: flex;
+    justify-content: space-between;
+}
+.topnav a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    float: left;
+    /*color:#ddd;*/
+    color: black;
+    text-align: center;
+    padding: 1px 0px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.topnav a:hover {
+    color: black;
+    text-decoration: underline;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+.topnav a.active {
+    /*color: black;*/
+    border-bottom: 1px solid black
+    
+
+  }
