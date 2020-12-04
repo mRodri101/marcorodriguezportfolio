@@ -2,8 +2,6 @@ header{
     display: inline-block;
 }
 
-
-
 h1 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -14,7 +12,6 @@ h1 {
 }
 .icons {
     width: 4vw;
-    float: right;
     margin: 1vw;
 }
 .topnav{
@@ -31,6 +28,9 @@ h1 {
     padding: 1px 0px;
     text-decoration: none;
     font-size: 17px;
+    /* I'm trying to condense the space my website is in so I can leave some white space on the sides*/
+    margin-left: 20px;
+    margin-right: 20px
   }
 
 .topnav a:hover {
