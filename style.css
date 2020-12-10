@@ -1,44 +1,297 @@
-header{
-    display: inline-block;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url("images/image.jpg");
+    
+    background-color: #e70c0c;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-h1 {
+.wrapper {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+/*menu button look
+.menu-btn {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+/*nav menu button 
+.menu-btn{
+    position: relative;
+}
+
+
+
+
+
+.menu-btn_lines,
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+    width: 1.5rem;
+    height: .01rem;
+    background-color: #111111;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+    content: "";
+    position: absolute;
+}
+.menu-btn__burger::before {
+    transform: translateY(-0.5rem);
+}
+.menu-btn__burger::after {
+    transform: translateY(0.5rem);
+}
+/* ANIMATION 
+.menu-btn.open .menu-btn_lines {
+    transform: translateX(2rem);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(-1.5rem,1.5rem);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+}
+
+*/
+
+/*
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vmin;
+    color: black;
+}
+
+.site-title {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
-.alignicons {
-    padding: 2vh;
+
+.invisible {
+    width: 8vmin;
+    margin: 0 2vmin;
 }
+*/
 .icons {
-    width: 4vw;
-    margin: 1vw;
+    width: 4vmin;
+    margin: 0 1vmin;
 }
+/*
 .topnav{
     display: flex;
     justify-content: space-between;
+    width: 70vmax;
+   
 }
+*/
 .topnav a {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     float: left;
-    /*color:#ddd;*/
     color: black;
     text-align: center;
     padding: 1px 0px;
     text-decoration: none;
     font-size: 17px;
-    /* I'm trying to condense the space my website is in so I can leave some white space on the sides*/
     margin-left: 20px;
     margin-right: 20px
-  }
-
+}
+/*
 .topnav a:hover {
     color: black;
     border-bottom: 1px solid black;
   }
   
 .topnav a.active {
-    /*color: black;*/
+    /*color: black;
     border-bottom: 1px solid black;
+}
+ */
+.hero-text {
+    border: 3px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/*PARENT CODE */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
+
+body {
+  font-family: Monterrat, sans-serif;
+}
+
+/* header */
+.parent-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+}
+
+.parent-header a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 2rem;
+}
+
+.parent-menu-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.parent-menu-items li a {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.parent-menu-items li a:hover {
+  background-color: #ccc7d3;
+}
+
+/* nav menu button */
+.parent-menu-btn {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.parent-menu-btn__lines,
+.parent-menu-btn__lines::before,
+.parent-menu-btn__lines::after {
+  width: 1.5rem;
+  height: 0.1rem;
+  background-color: #111111;
+  transition: all 0.5s ease-in-out;
+}
+.parent-menu-btn__lines::before,
+.parent-menu-btn__lines::after {
+  content: "";
+  position: absolute;
+}
+.parent-menu-btn__lines::before {
+  transform: translateY(-0.5rem);
+}
+.parent-menu-btn__lines::after {
+  transform: translateY(0.5rem);
+}
+/* animation */
+.parent-menu-btn.open .menu-btn__lines {
+  transform: translateX(2rem);
+  background-color: transparent;
+}
+.parent-menu-btn.open .menu-btn__lines::before {
+  transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+  background-color: #ffffff;
+}
+.parent-menu-btn.open .menu-btn__lines::after {
+  transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+  background-color: #ffffff;
+}
+
+/* sections */
+.section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* media query for tablet devices */
+@media (max-width: 1023px) {
+  .custom-shape-divider svg {
+    width: calc(200% + 1.3px);
+    height: 150px;
   }
+  .hero-col {
+    max-width: 100%;
+    width: clamp(300px, 50vw, 600px);
+    padding: 0;
+  }
+  .hero-img {
+    display: none;
+  }
+}
+
+/* media query for mobile devices */
+@media (max-width: 767px) {
+  .custom-shape-divider svg {
+    width: calc(250% + 1.3px);
+    height: 150px;
+  }
+  .parent-header a {
+    font-size: 1rem;
+  }
+  .parent-menu-btn {
+    display: flex;
+  }
+  .parent-menu-items {
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(100vw);
+    background-color: #5a4d70;
+    transition: transform 0.3s ease-in-out;
+  }
+  .parent-menu-items.open {
+    transform: translateX(0);
+  }
+  .parent-menu-items li {
+    width: 100vw;
+    height: 100%;
+  }
+  .parent-menu-items li a {
+    color: #ffffff;
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .parent-menu-items li a:hover {
+    color: #111111;
+  }
+}
