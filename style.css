@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 body{
-    background-image:url("images/image.jpg");
+    // background-image:url("images/image.jpg");
     
-    background-color: #e70c0c;
+    background-color: ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@ body{
     min-width: 100vw;
 }
 
-/*menu button look
+/*menu button look*/
 .menu-btn {
     position: relative;
     display: none;
@@ -30,14 +30,11 @@ body{
     cursor: pointer;
     z-index: 1;
 }
-/*nav menu button 
+
+nav menu button 
 .menu-btn{
     position: relative;
 }
-
-
-
-
 
 .menu-btn_lines,
 .menu-btn__lines::before,
@@ -73,7 +70,7 @@ body{
 
 */
 
-/*
+
 .header__top {
     display: flex;
     justify-content: space-between;
@@ -92,19 +89,18 @@ body{
     width: 8vmin;
     margin: 0 2vmin;
 }
-*/
+
 .icons {
     width: 4vmin;
     margin: 0 1vmin;
 }
-/*
+
 .topnav{
     display: flex;
     justify-content: space-between;
     width: 70vmax;
-   
 }
-*/
+
 .topnav a {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -117,11 +113,16 @@ body{
     margin-left: 20px;
     margin-right: 20px
 }
-/*
+
 .topnav a:hover {
     color: black;
     border-bottom: 1px solid black;
-  }
+}
+
+.sidenav {
+    display: none;
+}
+/*
   
 .topnav a.active {
     /*color: black;
@@ -142,12 +143,6 @@ body{
 }
 
 /*PARENT CODE */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
-
-body {
-  font-family: Monterrat, sans-serif;
-}
-
 /* header */
 .parent-header {
   position: fixed;
@@ -294,4 +289,42 @@ body {
   .parent-menu-items li a:hover {
     color: #111111;
   }
+
+  .sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+    .sidenav li {
+        list-style-type: none;
+    }
+    .sidenav li a {
+        display: block;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    .sidenav li a:hover {
+        background: green;
+    }
+
+    .slide {
+        animation-name: slidein;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slidein {
+      from { transform: translateX(100%);} 
+      to {
+        transform: translateX(0);
+      }
+    }
 }
