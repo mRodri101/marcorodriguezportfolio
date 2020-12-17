@@ -1,15 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background: white;
 }
 
 .test-img {
-    min-width: 15vw;
+    min-width: 217px;
     width: 25vmax;
     min-height: 250px;
     height: 25vmax;
