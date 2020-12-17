@@ -1,3 +1,15 @@
 body {
     background: white;
 }
+.about {
+    margin-left: 10em;
+    justify-content: center;
+    width: max-width:71.6vw;;
+    text-align: left;
+    /* margin: 0 auto; */
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+}   
+
+
+
